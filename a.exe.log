@@ -966,3 +966,123 @@ Run file:	C:\projects\quadratic_equation\a.exe
 Directory:	C:\projects\quadratic_equation
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 14223, функция: HDC__* {anonymous}::TX::txUseAlpha(HDC),
+
+Сообщение: Параметр "image" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF7201647D0 (64-bit), Flags: CMdRe0, Thread: 0xAA18 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF7201092CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF72012433E in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::txUseAlpha() at C:/Users/anton/Downloads/TX/TXLib.h:14223
+# 2 0x00007FF72013315A in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:17
+
+# 3 0x00007FF720133B9C in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txUseAlpha(HDC) at C:\Users\anton\Downloads\TX\TXLib.h:14223:
+
+  14221: HDC txUseAlpha (HDC image)
+  14222:     {
+=>14223: $1  if (_TX_HDC_FAILED (image)) return NULL;
+  14224: 
+  14225: $   HBITMAP bitmap = (HBITMAP) Win32::GetCurrentObject (image, OBJ_BITMAP);
+
+# 1 in void tx_print_parabola(double, double, double) at print_parabola.cpp:17:
+
+     15: 
+     16:     HDC  background_CopiedFromHelp = txLoadImage("C:/projects/quadratic_equation/caban.bmp");
+=>   17:     txUseAlpha(background_CopiedFromHelp);
+     18:     if (!background_CopiedFromHelp)
+     19:         txMessageBox ("нихера");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 30 2026 17:16:03, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 30 2026 17:16:07
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 14223, функция: HDC__* {anonymous}::TX::txUseAlpha(HDC),
+
+Сообщение: Параметр "image" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF77D9747D0 (64-bit), Flags: CMdRe0, Thread: 0x77A4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF77D9192CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF77D93433E in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::txUseAlpha() at C:/Users/anton/Downloads/TX/TXLib.h:14223
+# 2 0x00007FF77D94315A in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:17
+
+# 3 0x00007FF77D943B9C in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txUseAlpha(HDC) at C:\Users\anton\Downloads\TX\TXLib.h:14223:
+
+  14221: HDC txUseAlpha (HDC image)
+  14222:     {
+=>14223: $1  if (_TX_HDC_FAILED (image)) return NULL;
+  14224: 
+  14225: $   HBITMAP bitmap = (HBITMAP) Win32::GetCurrentObject (image, OBJ_BITMAP);
+
+# 1 in void tx_print_parabola(double, double, double) at print_parabola.cpp:17:
+
+     15: 
+     16:     HDC  background_CopiedFromHelp = txLoadImage("caban.bmp", 100, 100);
+=>   17:     txUseAlpha(background_CopiedFromHelp);
+     18:     if (!background_CopiedFromHelp)
+     19:         txMessageBox ("нихера");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 30 2026 17:20:37, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 30 2026 17:20:40
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------

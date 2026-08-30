@@ -39,7 +39,7 @@ struct quadratic_equation {
 };
 
 const double SIZE_X = 900;
-const double SIZE_Y = 400;
+const double SIZE_Y = 900;
 
 const int COUNT_OF_VARIABLE = 6;
 const double EPSILON =0.0001;
@@ -61,7 +61,7 @@ const bool ITS_A_OR_B = true;
 const bool ITS_C = false;
 
 /// @brief файл, из которого будут браться коэффициенты при вводе из файла
-const char MY_FILE[MAX_LEN] = "C:/projects/quadratic_equation/input.txt";
+const char MY_FILE[MAX_LEN] = "input.txt";
 
 /// @brief массив тестов, которые создаются вручную
 const quadratic_equation TESTS[COUNT_OF_MY_TEST] = {

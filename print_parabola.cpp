@@ -13,10 +13,18 @@ void tx_print_parabola(double a, double b, double c) {
     txClearConsole();
     txCreateWindow(SIZE_X, SIZE_Y);
 
+    HDC  background_CopiedFromHelp = txLoadImage("caban.bmp");
+    //txUseAlpha(background_CopiedFromHelp);
+    if (!background_CopiedFromHelp)
+        txMessageBox ("нихера");
+    txBitBlt(0, 0, background_CopiedFromHelp);
+    txDeleteDC(background_CopiedFromHelp);
+
     double coordinate_of_top_x = - b / (2 * a);
     double coordinate_of_top_y = a * (coordinate_of_top_x * coordinate_of_top_x) + b * coordinate_of_top_x + c;
     double COEFFICIENT_Y = make_y_coefficient(coordinate_of_top_y, a);
-    double COEFFICIENT_X = 0.5;
+    double COEFFICIENT_X = 1;
+
     double div_price_x = division_price(COEFFICIENT_X)*5;
     double div_price_y = division_price(COEFFICIENT_Y)*5;
     //printf("%lg %lg \n", div_price_x, div_price_y);
