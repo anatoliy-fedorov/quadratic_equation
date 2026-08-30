@@ -7,8 +7,10 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${fileDirname}/main.c",
-                "${fileDirname}/input.c",
+                "${fileDirname}/main.cpp",
+                "${fileDirname}/input_output.cpp",
+                "${fileDirname}/tests.cpp",
+                "${fileDirname}/rand_test.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

@@ -1,0 +1,968 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\.vscode\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 13905, функция: unsigned int {anonymous}::TX::txSetTextAlign(unsigned int, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF611A357D0 (64-bit), Flags: Cmdre0, Thread: 0x6A80 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6119FBEB5 in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::_txError()
+# 1 0x00007FF611A08E5A in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::txSetTextAlign()
+# 2 0x00007FF611A116D4 in C:\projects\.vscode\a.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 26 2026 21:04:56, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 26 2026 21:05:03
+
+Run file:	C:\projects\.vscode\a.exe
+Directory:	C:\projects\.vscode
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\.vscode\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 13905, функция: unsigned int {anonymous}::TX::txSetTextAlign(unsigned int, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF690F877D0 (64-bit), Flags: Cmdre0, Thread: 0x960C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF690F392CB in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF690F50A81 in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::txSetTextAlign() at C:/Users/anton/Downloads/TX/TXLib.h:13905
+
+# 2 0x00007FF690F615DF in C:\projects\.vscode\a.exe: main() at C:/projects/.vscode/test_file.cpp:5:
+
+      3: int main() {
+      4:     txClearConsole();
+=>    5:     txSetTextAlign(TA_CENTER, txDC());
+      6:     printf("1111");
+      7:     txCreateWindow (800, 600);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in unsigned int {anonymous}::TX::txSetTextAlign(unsigned int, HDC) at C:\Users\anton\Downloads\TX\TXLib.h:13905:
+
+  13903: unsigned txSetTextAlign (unsigned align /*= TA_CENTER | TA_BASELINE*/, HDC dc /*= txDC()*/)
+  13904:     {
+=>13905: $1  if (_TX_DEFAULT_HDC_FAILED (dc)) return false;  //-V601
+  13906: 
+  13907: $   return txGDI ((Win32::SetTextAlign (dc, align)), dc);
+
+# 1 in int main() at test_file.cpp:5:
+
+      3: int main() {
+      4:     txClearConsole();
+=>    5:     txSetTextAlign(TA_CENTER, txDC());
+      6:     printf("1111");
+      7:     txCreateWindow (800, 600);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 26 2026 21:05:56, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 26 2026 21:06:06
+
+Run file:	C:\projects\.vscode\a.exe
+Directory:	C:\projects\.vscode
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\.vscode\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 13905, функция: unsigned int {anonymous}::TX::txSetTextAlign(unsigned int, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6BA6457D0 (64-bit), Flags: Cmdre0, Thread: 0xA034 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6BA60BEB5 in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::_txError()
+# 1 0x00007FF6BA618E5A in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::txSetTextAlign()
+# 2 0x00007FF6BA62169C in C:\projects\.vscode\a.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 26 2026 21:07:44, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 26 2026 21:07:51
+
+Run file:	C:\projects\.vscode\a.exe
+Directory:	C:\projects\.vscode
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\.vscode\a.exe, файл: C:\Users\anton\Downloads\TX\TXLib.h, строка: 8956, функция: HWND__* {anonymous}::TX::txCreateWindow(double, double, bool),
+
+Сообщение: Окно рисования уже создано!
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6ACD257D0 (64-bit), Flags: CMdRe0, Thread: 0x4374 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6ACCEBEB5 in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::_txError()
+# 1 0x00007FF6ACCE2FE6 in C:\projects\.vscode\a.exe: (anonymous namespace)::TX::txCreateWindow()
+# 2 0x00007FF6ACD017DE in C:\projects\.vscode\a.exe: main()
+
+TXLib печалится: Нет информации об исходных файлах. Вы не забыли опцию -g при компиляции?
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 26 2026 21:10:01, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 26 2026 21:10:06
+
+Run file:	C:\projects\.vscode\a.exe
+Directory:	C:\projects\.vscode
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF65AC940F0 (64-bit), Flags: Cmdre0, Thread: 0xAD2C (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF65AB6EFEB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF65AB6F860 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF86997F2E4 in C:\WINDOWS\System32\ucrtbase.dll: seh_filter_exe()
+# 3 0x00007FF65AB996B0 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF65AB13915 in C:\projects\quadratic_equation\a.exe: get_array_of_coefficients() at C:/projects/quadratic_equation/input_output.cpp:108:
+
+    106:         i++;
+    107:         j++;
+=>  108:         while(str[i] != '+' && str[i] != '-' && str[i] != '=') {
+    109:             temp_line[j] = str[i];
+    110:             i++;
+
+# 8 0x00007FF65AB13838 in C:\projects\quadratic_equation\a.exe: get_coefficient_line() at C:/projects/quadratic_equation/input_output.cpp:80:
+
+     78:     //char *is_exist_a = NULL, *is_exist_b = NULL, *is_exist_c = NULL;
+     79: 
+=>   80:     get_array_of_coefficients(array_of_coefficients[MAX_LEN], str);
+     81:     //get_exist(&is_exist_a, &is_exist_b, &is_exist_c, str);
+     82:     //int iterator = 0;
+
+# 9 0x00007FF65AB134D4 in C:\projects\quadratic_equation\a.exe: input_coefficient() at C:/projects/quadratic_equation/input_output.cpp:17:
+
+     15:             return true;
+     16:         case(full_equation):
+=>   17:             return get_coefficient_line(a, b, c);
+     18:         case(from_file):
+     19:             return (!get_coefficient_file(a, b, c));
+
+#10 0x00007FF65AAD15A3 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:20:
+
+     18:     quadratic_equation equation = {.count_of_roots = e_error, .x1 = NAN, .x2 = NAN};
+     19: 
+=>   20:     if (!input_coefficient(&equation.a, &equation.b, &equation.c)) {
+     21:         printf("ввод некорректен\n");
+     22:         return -1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 12:47:39, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 12:48:23
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF61EAE40F0 (64-bit), Flags: Cmdre0, Thread: 0xA3A8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF61E9BEF4B in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF61E9BF7C0 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF86997F2E4 in C:\WINDOWS\System32\ucrtbase.dll: seh_filter_exe()
+# 3 0x00007FF61E9E9610 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF61E96389C in C:\projects\quadratic_equation\a.exe: get_coefficient_line() at C:/projects/quadratic_equation/input_output.cpp:86:
+
+     84:         i++;
+     85:         j++;
+=>   86:         while(str[i] != '+' && str[i] != '-' && str[i] != '=') {
+     87:             temp_line[j] = str[i];
+     88:             i++;
+
+# 8 0x00007FF61E9634D4 in C:\projects\quadratic_equation\a.exe: input_coefficient() at C:/projects/quadratic_equation/input_output.cpp:17:
+
+     15:             return true;
+     16:         case(full_equation):
+=>   17:             return get_coefficient_line(a, b, c);
+     18:         case(from_file):
+     19:             return (!get_coefficient_file(a, b, c));
+
+# 9 0x00007FF61E9215A3 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:20:
+
+     18:     quadratic_equation equation = {.count_of_roots = e_error, .x1 = NAN, .x2 = NAN};
+     19: 
+=>   20:     if (!input_coefficient(&equation.a, &equation.b, &equation.c)) {
+     21:         printf("ввод некорректен\n");
+     22:         return -1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 13:03:45, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 13:03:51
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6B18440F0 (64-bit), Flags: Cmdre0, Thread: 0xAC98 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6B171F0AB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF6B171F920 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699B2139 in C:\WINDOWS\System32\ucrtbase.dll: raise()
+# 3 0x00007FF869995261 in C:\WINDOWS\System32\ucrtbase.dll: abort()
+# 4 0x00007FF86994FF6D in C:\WINDOWS\System32\ucrtbase.dll: controlfp_s()
+# 5 0x00007FF8699B3291 in C:\WINDOWS\System32\ucrtbase.dll: assert()
+# 6 0x00007FF6B1749ECC in C:\projects\quadratic_equation\a.exe: _assert() at D:/W/B/src/mingw-w64/mingw-w64-crt/misc/_assert.c:27
+
+# 7 0x00007FF6B16C410A in C:\projects\quadratic_equation\a.exe: output_solution() at C:/projects/quadratic_equation/input_output.cpp:228:
+
+    226: 
+    227: void output_solution(int count_of_solution, double x1, double x2) {
+=>  228:     assert(isfinite(x1));
+    229:     assert(isfinite(x2));
+    230: 
+
+# 8 0x00007FF6B16815F6 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:26:
+
+     24: 
+     25:     solution_quadratic_equation(&equation);
+=>   26:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     27: 
+     28:     printf("%lf, %lf, %lf", equation.a, equation.b, equation.c);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 19:25:09, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 19:26:18
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6B18440F0 (64-bit), Flags: Cmdre0, Thread: 0x8AB0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6B171F0AB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF6B171F920 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699B2139 in C:\WINDOWS\System32\ucrtbase.dll: raise()
+# 3 0x00007FF869995261 in C:\WINDOWS\System32\ucrtbase.dll: abort()
+# 4 0x00007FF86994FF6D in C:\WINDOWS\System32\ucrtbase.dll: controlfp_s()
+# 5 0x00007FF8699B3291 in C:\WINDOWS\System32\ucrtbase.dll: assert()
+# 6 0x00007FF6B1749ECC in C:\projects\quadratic_equation\a.exe: _assert() at D:/W/B/src/mingw-w64/mingw-w64-crt/misc/_assert.c:27
+
+# 7 0x00007FF6B16C410A in C:\projects\quadratic_equation\a.exe: output_solution() at C:/projects/quadratic_equation/input_output.cpp:228:
+
+    226: 
+    227: void output_solution(int count_of_solution, double x1, double x2) {
+=>  228: 
+    229:     switch (count_of_solution) {
+    230:         case e_zero_solution:
+
+# 8 0x00007FF6B16815F6 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:26:
+
+     24: 
+     25:     solution_quadratic_equation(&equation);
+=>   26:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     27: 
+     28:     printf("%lf, %lf, %lf", equation.a, equation.b, equation.c);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 19:25:09, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 19:27:23
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF7369F40F0 (64-bit), Flags: Cmdre0, Thread: 0xAFDC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF7368CF15B in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF7368CF9D0 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF86997F2E4 in C:\WINDOWS\System32\ucrtbase.dll: seh_filter_exe()
+# 3 0x00007FF7368F9820 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF73687371F in C:\projects\quadratic_equation\a.exe: to_separate_line() at C:/projects/quadratic_equation/input_output.cpp:68:
+
+     66:             j++;
+     67:         }
+=>   68:         while(str[index] != '+' && str[index] != '-' && str[index] != '=');
+     69: 
+     70:         if (!is_okey_coefficient(temp_line)) {
+
+# 8 0x00007FF7368735DC in C:\projects\quadratic_equation\a.exe: get_coefficient_from_line() at C:/projects/quadratic_equation/input_output.cpp:48:
+
+     46:     format_after_equal(str);
+     47:     printf("%s", str);
+=>   48:     return to_separate_line(str, a, b, c);
+     49: }
+     50: 
+
+# 9 0x00007FF736873454 in C:\projects\quadratic_equation\a.exe: input_coefficient() at C:/projects/quadratic_equation/input_output.cpp:17:
+
+     15:             return true;
+     16:         case(full_equation):
+=>   17:             return get_coefficient_from_line(a, b, c);
+     18:         case(from_file):
+     19:             return get_coefficient_from_file(a, b, c);
+
+#10 0x00007FF7368315AE in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:20:
+
+     18:     quadratic_equation equation = {.a = 0, .b = 0, .c = 0, .count_of_roots = e_error, .x1 = NAN, .x2 = NAN};
+     19: 
+=>   20:     if (!input_coefficient(&equation.a, &equation.b, &equation.c)) {
+     21:         printf("ввод некорректен\n");
+     22:         return -1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 19:53:52, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 19:54:50
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF66F2940F0 (64-bit), Flags: Cmdre0, Thread: 0x40FC (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF66F16F16B in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF66F16F9E0 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF86997F2E4 in C:\WINDOWS\System32\ucrtbase.dll: seh_filter_exe()
+# 3 0x00007FF66F199830 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF66F11371F in C:\projects\quadratic_equation\a.exe: to_separate_line() at C:/projects/quadratic_equation/input_output.cpp:68:
+
+     66:             j++;
+     67:         }
+=>   68:         while(str[index] != '+' && str[index] != '-' && str[index] != '=');
+     69: 
+     70:         if (!is_okey_coefficient(temp_line)) {
+
+# 8 0x00007FF66F1135DC in C:\projects\quadratic_equation\a.exe: get_coefficient_from_line() at C:/projects/quadratic_equation/input_output.cpp:48:
+
+     46:     format_after_equal(str);
+     47:     printf("%s", str);
+=>   48:     return to_separate_line(str, a, b, c);
+     49: }
+     50: 
+
+# 9 0x00007FF66F113454 in C:\projects\quadratic_equation\a.exe: input_coefficient() at C:/projects/quadratic_equation/input_output.cpp:17:
+
+     15:             return true;
+     16:         case(full_equation):
+=>   17:             return get_coefficient_from_line(a, b, c);
+     18:         case(from_file):
+     19:             return get_coefficient_from_file(a, b, c);
+
+#10 0x00007FF66F0D15AE in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:20:
+
+     18:     quadratic_equation equation = {.a = 0, .b = 0, .c = 0, .count_of_roots = e_error, .x1 = NAN, .x2 = NAN};
+     19: 
+=>   20:     if (!input_coefficient(&equation.a, &equation.b, &equation.c)) {
+     21:         printf("ввод некорректен\n");
+     22:         return -1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 27 2026 19:57:00, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 27 2026 19:57:10
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF7261D47D0 (64-bit), Flags: CMdRe0, Thread: 0x6608 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF7261792CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF726179B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF7261A5D80 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+# 7 0x00007FF7261A314F in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:16
+
+# 8 0x00007FF7261A3594 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:34:
+
+     32: 
+     33:     solution_quadratic_equation(&equation);
+=>   34:     tx_print_parabola(equation.a, equation.b, equation.c);
+     35:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     36: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 29 2026 16:51:23, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 29 2026 16:52:19
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF7717547D0 (64-bit), Flags: CMdRe0, Thread: 0x7C98 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF7716F92CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF7716F9B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF771725D50 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+# 7 0x00007FF771723129 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:15
+
+# 8 0x00007FF77172359B in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:34:
+
+     32: 
+     33:     solution_quadratic_equation(&equation);
+=>   34:     tx_print_parabola(equation.a, equation.b, equation.c);
+     35:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     36: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 29 2026 17:33:29, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 29 2026 17:33:32
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6AFEA47D0 (64-bit), Flags: CMdRe0, Thread: 0x6978 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6AFE492CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF6AFE49B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF6AFE75DA0 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+# 7 0x00007FF6AFE73129 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:15
+
+# 8 0x00007FF6AFE735F2 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34:     printf("%lf, %lf, %lf", equation.a, equation.b, equation.c);
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 29 2026 17:34:36, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 29 2026 17:34:39
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6448647D0 (64-bit), Flags: CMdRe0, Thread: 0x555C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6448092CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF644809B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF644835D80 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+# 7 0x00007FF644833165 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:15
+
+# 8 0x00007FF6448335D7 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 29 2026 17:35:49, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 29 2026 17:35:52
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF7426F47D0 (64-bit), Flags: CMdRe0, Thread: 0x53E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF7426992CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF742699B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF86997F2E4 in C:\WINDOWS\System32\ucrtbase.dll: seh_filter_exe()
+# 3 0x00007FF7426C6110 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+# 7 0x00007FF8699DD921 in C:\WINDOWS\System32\ucrtbase.dll: strlen()
+# 8 0x00007FF7426C6D65 in C:\projects\quadratic_equation\a.exe: __pformat_puts() at D:/W/B/src/mingw-w64/mingw-w64-crt/stdio/mingw_pformat.c:580
+# 9 0x00007FF7426C9272 in C:\projects\quadratic_equation\a.exe: __mingw_pformat() at D:/W/B/src/mingw-w64/mingw-w64-crt/stdio/mingw_pformat.c:2539
+#10 0x00007FF7426C955B in C:\projects\quadratic_equation\a.exe: __mingw_printf() at D:/W/B/src/mingw-w64/mingw-w64-crt/stdio/mingw_printf.c:54
+#11 0x00007FF7426C3189 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:22
+
+#12 0x00007FF7426C3962 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 29 2026 19:06:48, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 29 2026 19:06:52
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF73EA547D0 (64-bit), Flags: CMdRe0, Thread: 0x1A60 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF73E9F92CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF73E9F9B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF73EA26170 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF73EA2331A in C:\projects\quadratic_equation\a.exe: division_price() at C:/projects/quadratic_equation/print_parabola.cpp:52:
+
+     50:     double div_price_double = 1;
+     51:     while (div_price_double * coefficient < 1){
+=>   52:         div_price_double *= 10;
+     53:     }
+     54:     return div_price_double;
+
+# 8 0x00007FF73EA23165 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:21
+
+# 9 0x00007FF73EA239BB in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 30 2026 11:52:04, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 30 2026 11:52:16
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6D40B47D0 (64-bit), Flags: CMdRe0, Thread: 0xBA74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF6D40592CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF6D4059B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF6D4086170 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF6D408331A in C:\projects\quadratic_equation\a.exe: division_price() at C:/projects/quadratic_equation/print_parabola.cpp:52:
+
+     50:     double div_price_double = 1;
+     51:     while (div_price_double * coefficient < 1){
+=>   52:         div_price_double *= 10;
+     53:     }
+     54:     return div_price_double;
+
+# 8 0x00007FF6D4083165 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:21
+
+# 9 0x00007FF6D40839BB in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 30 2026 11:53:07, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 30 2026 11:53:18
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\projects\quadratic_equation\a.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x00007FF6200447D0 (64-bit), Flags: CMdRe0, Thread: 0x9080 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FF61FFE92CB in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txError() at C:/Users/anton/Downloads/TX/TXLib.h:11254
+# 1 0x00007FF61FFE9B40 in C:\projects\quadratic_equation\a.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/anton/Downloads/TX/TXLib.h:11338
+# 2 0x00007FF8699E6EAF in C:\WINDOWS\System32\ucrtbase.dll: memcpy()
+# 3 0x00007FF6200161C0 in C:\projects\quadratic_equation\a.exe: __mingw_SEH_error_handler() at D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crt_handler.c:105
+# 4 0x00007FF86C844ABF in C:\WINDOWS\SYSTEM32\ntdll.dll: _chkstk()
+# 5 0x00007FF86C725E97 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlLocateExtendedFeature()
+# 6 0x00007FF86C8443FE in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+# 7 0x00007FF620013372 in C:\projects\quadratic_equation\a.exe: division_price() at C:/projects/quadratic_equation/print_parabola.cpp:52:
+
+     50:     double div_price_double = 1;
+     51:     while (div_price_double * coefficient < 1){
+=>   52:         div_price_double *= 10;
+     53:     }
+     54:     return div_price_double;
+
+# 8 0x00007FF620013165 in C:\projects\quadratic_equation\a.exe: tx_print_parabola() at C:/projects/quadratic_equation/print_parabola.cpp:21
+
+# 9 0x00007FF620013A13 in C:\projects\quadratic_equation\a.exe: main() at C:/projects/quadratic_equation/main.cpp:35:
+
+     33:     solution_quadratic_equation(&equation);
+     34: 
+=>   35:     tx_print_parabola(equation.a, equation.b, equation.c);
+     36:     output_solution(equation.count_of_roots, equation.x1, equation.x2);
+     37: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\anton\Downloads\TX\TXLib.h
+Compiled:	Aug 30 2026 11:53:53, GNU g++ 16.1.0, std=202002L, MinGW-W64 Runtime 15.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, DEBUG
+Started:	Aug 30 2026 11:54:04
+
+Run file:	C:\projects\quadratic_equation\a.exe
+Directory:	C:\projects\quadratic_equation
+
+--------------------------------------------------
